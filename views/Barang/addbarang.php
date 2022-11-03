@@ -8,7 +8,7 @@
     }
 ?>
 <caption><h1>Data Barang</h1></caption>
-<form action="" method="post">
+<form action="<?= $base_url?>barang/save" method="post">
     <div>
         <label for="">Id Barang</label>
         <input type="text" name="idbarang" id="" value="<?= $kodebarang ?>" readonly>
@@ -20,8 +20,14 @@
     <div>
         <label for="">Jenis Barang</label>
         <select name="jenisbarang" id="">
-            <option>Pilih</option>
-            <option value=""></option>
+            <option>TV</option>
+            <option>Meja</option>
+            <option>Cat kayu</option>
+            <option>Dispenser</option>
+            <?php foreach ($data['jenbarang'] as $jen) { ?>
+            <option value="<?= $jen['idjenis']?>">
+            <?= $jen['jenisbarang']?></option>
+            <?php } ?>
         </select>
     </div>
     <div>
@@ -35,10 +41,10 @@
     <div>
         <label for="">Nama Pengirim</label>
         <select name="nmdist" id="">
-            <option>Pilih</option>
-            <?php foreach ($data['jenbarang'] as $jen) { ?>
-            <option value="<?= $jen['idjenis']?>">
-            <?= $jen['jenisbarang']?></option>
+            <option></option>
+            <?php foreach ($data['distri'] as $dis) { ?>
+            <option value="<?= $dis['iddist']?>">
+            <?= $dis['nmbarang']?></option>
             <?php } ?>
         </select>
     </div>
