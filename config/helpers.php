@@ -16,8 +16,8 @@ class Helpers
 		$nama = 'test';
 
 		include 'views/includes/header.php';
-		include 'views/includes/navbar.php';
 		include 'views/includes/sidebar.php';
+		include 'views/includes/navbar.php';
 		include 'views/'.$view;
 		include 'views/includes/footer.php';
 	}
@@ -32,7 +32,7 @@ class Helpers
 		$base_url = $this->base_url();
 
 		if(! isset($_SESSION['userid'])) {
-			header('location: '.$base_url.'/login');
+			header('location: '.$base_url.'c_login');
 			return false;
 		}
 		else
@@ -40,5 +40,3 @@ class Helpers
 	}
 
 }
-
-?>
