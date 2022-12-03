@@ -5,33 +5,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/styLelogin.css">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <title>HALAMAN LOGIN</title>
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/styleLogin.css">
+  <title>Halaman Login</title>
 </head>
 
 <body class="text-center">
-
-  <body>
-    <main class="form-signin w-100 m-auto">
-      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-      <form action="" method="post">
-        <div class="form-floating">
-          <input type="text" name="username" id="floatingInput" class="form-control" placeholder="username">
-          <label for="floatingInput">username</label>
-        </div>
-        <div class="form-floating">
-          <input type="password" name="password" id="floatingPassword" class="form-control" placeholder="password">
-          <label for="floatingPassword">password</label>
-        </div>
-        <div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
-        </div>
-      </form>
-    </main>
-  </body>
+  <main class="form-signin w-100 m-auto">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <form action="<?= $base_url ?>c_login/login" method="post">
+      <div class="form-floating">
+        <input type="text" name="username" id="floatingInput" class="form-control" placeholder="Username">
+        <label for="floatingInput">Username</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" name="password" id="floatingPassword" class="form-control" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+      </div>
+    </form>
+  </main>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
 
 </html>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

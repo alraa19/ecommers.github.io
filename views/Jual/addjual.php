@@ -11,7 +11,7 @@
         $kodejual = date('ymd') . $kd;
     }
     ?>
-    <script typr="text/javascript">
+    <script type="text/javascript">
         function startCalc() {
             interval = setinterval("calc()", 1);
         }
@@ -22,7 +22,7 @@
             bayar = document.jual.bayar.value;
             total = document.jual.totalharga;
             kembalian = document.jual.kembali;
-            total.value = (harga * 1) * (gty * 1);
+            total.value = (harga * 1) * (qty * 1);
             kembalian.value = (bayar * 1) - (total.value * 1);
         }
 
@@ -31,10 +31,10 @@
         }
     </script>
     <div>
-        <form action="" method="post" name="jual">
+        <form action="<?= $base_url ?>jual/save" method="post" name="jual">
             <div>
                 <label for="">Id Jual</label>
-                <input type="text" name="idjual" id="" value="<?= $kodejual ?>" readonlys>
+                <input type="text" name="idjual" id="" value="<?= $kdjual ?>" readonlys>
             </div>
             <div>
                 <label for="">Tanggal Transaksi</label>

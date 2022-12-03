@@ -1,4 +1,4 @@
 <?php
-if($aksi=='index'){
+if ($aksi == 'index') {
     $helpers->template('petugas/petugas.php');
 }

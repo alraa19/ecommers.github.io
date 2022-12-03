@@ -19,14 +19,10 @@
         </div>
         <div>
             <label for="">Jenis Barang</label>
-            <select name="jenisbarang" id="">
-                <option>TV</option>
-                <option>Meja</option>
-                <option>Cat kayu</option>
-                <option>Dispenser</option>
+            <select name="idjenis" id="">
+                <option>pilih</option>
                 <?php foreach ($data['jenbarang'] as $jen) { ?>
-                    <option value="<?= $jen['idjenis'] ?>">
-                        <?= $jen['jenisbarang'] ?></option>
+                    <option value="<?= $jen['idjenis'] ?>"> <?= $jen['jenisbarang'] ?></option>
                 <?php } ?>
             </select>
         </div>
@@ -40,11 +36,11 @@
         </div>
         <div>
             <label for="">Nama Pengirim</label>
-            <select name="nmdist" id="">
-                <option></option>
-                <?php foreach ($data['distri'] as $dis) { ?>
-                    <option value="<?= $dis['iddist'] ?>">
-                        <?= $dis['nmbarang'] ?></option>
+            <select name="iddist" id="">
+                <option>Pilih</option>
+                <?php foreach ($data['distri'] as $dist) { ?>
+                    <option value="<?= $dist['iddist'] ?>">
+                        <?= $dist['nmdist'] ?></option>
                 <?php } ?>
             </select>
         </div>

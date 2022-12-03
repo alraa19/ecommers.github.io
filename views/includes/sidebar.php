@@ -58,8 +58,8 @@
         </li>
         <li class="item-header">Proses</li>
         <li>
-            <a href="https://metroui.org.ua/intro.html">
-                <span class="icon"><span class="mif-brightness-auto fg-yellow"></span></span>
+            <a href="jual">
+                <span class="icon"><span class="mif-cart fg-yellow"></span></span>
                 <span class="caption">Transaksi</span>
             </a>
         </li>

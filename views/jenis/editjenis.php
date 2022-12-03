@@ -5,7 +5,6 @@
             <input type="text" name="jenisbarang" id="" value="<?= $edit['jenisbarang'] ?>">
             <label for="">Keterangan</label>
             <input type="text" name="ket" id="" value="<?= $edit['ket'] ?>">
-
             <input type="submit" value="Simpan">
             <input type="reset" value="Batal">
         </form>

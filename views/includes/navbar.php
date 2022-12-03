@@ -34,7 +34,7 @@
                     </div>
                     <div class="bg-white d-flex flex-justify-between flex-equal-items p-2 bg-light">
                         <button class="button mr-1">Profile</button>
-                        <button class="button ml-1">Sign out</button>
+                        <a href="<?= $base_url ?>c_login/login"> <button class="button ml-1">Sign out</button></a>
                     </div>
                 </div>
             </div>
